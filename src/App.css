@@ -1,38 +1,64 @@
 .App {
-  text-align: center;
+	min-width: 550px;
+  max-width: 550px;
+	min-height: 704px;
+  background-color: white;
+}
+header {
+  background-color: red;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > img {
+  margin-right: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.travel-location {
+  min-width: 470px;
+  min-height: 168px;
+  max-width: 470px;
+  max-height: 168px;
+  margin: 36px 40px 0px 40px;
+  display: inline-flex;
+}
+
+.travel-image {
+  border-radius: 10px;
+  height: 168px;
+  width: 125px;
+  object-fit: fill;
+}
+.location-pin-icon {
+  height: 10px;
+  width: 7px;
+  object-fit: fill;
+  margin-right: 2px;
+}
+.location-details {
+  font-size: small;
+  font-weight: normal;
+  margin-left: 20px;
+  display: block;
+}
+.location-country {
+  font-weight: bold;
+  display: inline;
+}
+.location-country > a {
+  margin-left: 10px;
+}
+.location-title {
+  font-size: medium;
+  font-weight: bold;
+}
+.location-date {
+  font-weight: bold;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
