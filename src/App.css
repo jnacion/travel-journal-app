@@ -5,9 +5,9 @@
   background-color: white;
 }
 header {
-  background-color: red;
+  background-color: rgb(241, 77, 77);
   color: white;
-  height: 70px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,36 +26,41 @@ header > img {
 }
 
 .travel-image {
-  border-radius: 10px;
+  border-radius: 5px;
   height: 168px;
   width: 125px;
-  object-fit: fill;
+  object-fit: cover;
 }
 .location-pin-icon {
   height: 10px;
   width: 7px;
   object-fit: fill;
-  margin-right: 2px;
+  margin-right: 5px;
 }
 .location-details {
   font-size: small;
-  font-weight: normal;
+  font-weight: 100;
   margin-left: 20px;
   display: block;
 }
 .location-country {
-  font-weight: bold;
+  font-weight: normal;
   display: inline;
+  text-transform: uppercase;
 }
 .location-country > a {
+  font-size: smaller;
   margin-left: 10px;
+  text-transform: capitalize;
 }
 .location-title {
-  font-size: medium;
+  font-size: x-large;
   font-weight: bold;
+  margin: 5px 0px 10px 0px;
 }
 .location-date {
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
